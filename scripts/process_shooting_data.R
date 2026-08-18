@@ -107,7 +107,7 @@ if (is.null(acs_raw)) {
          call. = FALSE)
   }
   
-  acs_raw <- st_read("acs_block_groups_2024_fallback.geojson") %>%
+  acs_raw <- st_read("scripts/acs_block_groups_2024_fallback.geojson") %>%
     # make sure the columns read as numeric
     mutate(across(
       .cols = ends_with("E") | ends_with("M"),
