@@ -1,0 +1,11 @@
+Package: shootingvictimspipeline
+Title: Philadelphia Shooting Victims Data Pipeline
+Version: 0.0.1
+Description: Pulls ACS Census data and Philadelphia open data sources, spatially joins shooting victim records to geographic boundaries, and writes a processed CSV for the dashboard.
+Depends: R (>= 4.1.0)
+Imports:
+    dplyr,
+    sf,
+    tidycensus,
+    readr
+Encoding: UTF-8
