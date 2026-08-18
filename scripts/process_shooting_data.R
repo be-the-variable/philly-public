@@ -101,7 +101,7 @@ for (yr in candidate_years) {
 if (is.null(acs_raw)) {
   message("No newer ACS data available from API — falling back to saved geojson.")
   
-  if (!file.exists("acs_block_groups_2024_fallback.geojson")) {
+  if (!file.exists("scripts/acs_block_groups_2024_fallback.geojson")) {
     stop("ACS API failed AND fallback file 'acs_block_groups_2024_fallback.geojson' ",
          "was not found in the working directory. Check that it's committed to the repo.",
          call. = FALSE)
